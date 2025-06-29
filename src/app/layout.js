@@ -1,5 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Baloo_2 } from "next/font/google";
+// import { Baloo_2 } from "@next/font/google";
 import "./globals.css";
+import Navbar from "@/Components/Navbar";
+
+const baloo2 = Baloo_2({
+  // weight: "400", // or your desired weight
+  subsets: ["latin"], // or other subsets
+  display: "swap", // optional: improves performance and fallback
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,9 +27,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${baloo2.className} antialiased`}>
+        <Navbar />
         {children}
       </body>
     </html>
