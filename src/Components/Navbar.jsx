@@ -34,7 +34,7 @@ const Navbar = () => {
             exit={{ scaleY: 0, opacity: 0 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
             // style={{ originY: 0, overflow: "hidden", background: "#B82600" }}
-            className="absolute right-6 top-15 w-28 rounded-lg p-2 text-xs bg-[#B82600] origin-top text-white font-bold flex flex-col gap-3"
+            className="absolute right-6 top-15 w-36 rounded-lg p-3 text-sm bg-[#B82600] origin-top text-white font-bold flex flex-col gap-5"
           >
             <Link onClick={() => setOpen(false)} href="/" className="">
               Home
