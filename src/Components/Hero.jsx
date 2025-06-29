@@ -7,7 +7,7 @@ const Hero = () => {
       <h1 className="font-bold text-[28px] text-center">
         Where Future Champions Rise!
       </h1>
-      <p className="text-center text-[12px] max-w-80 mx-auto mt-2 leading-4">
+      <p className="text-center text-sm max-w-80 mx-auto mt-2 leading-4">
         Stay updated with real-time scores, team stats, and match-day actions
         from Johnvents Apex league. Dive into fixtures, match events, and league
         tables — all in one place. Football lives here.
