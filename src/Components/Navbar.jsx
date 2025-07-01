@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
       <div
         onClick={() => toggleMenu()}
-        className={`text-xl cursor-pointer transition-transform duration-300 ease-in-out ${
+        className={`text-xl cursor-pointer transition-transform duration-400 ease-in-out ${
           open ? "rotate-90" : ""
         }`}
       >
