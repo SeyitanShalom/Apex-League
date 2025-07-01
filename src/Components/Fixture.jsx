@@ -1,8 +1,9 @@
 import React from "react";
 import { FiMenu } from "react-icons/fi";
 import { MdLocationPin } from "react-icons/md";
+import { RiCalendarScheduleLine } from "react-icons/ri";
 
-const LiveMatch = () => {
+const Fixture = () => {
   return (
     <>
       <div className=" rounded-xl p-2 shadow-lg space-y-3">
@@ -11,14 +12,14 @@ const LiveMatch = () => {
             <div className="w-10 h-10 flex justify-center items-center border-2 border-[#B82600] rounded-full">
               <FiMenu className="text-xl" />
             </div>
-            <h3 className="text-sm font-semibold">Team A</h3>
+            <h3 className="text-sm font-semibold">Team E</h3>
           </div>
           <h2 className="text-xl font-semibold">0-0</h2>
           <div className="flex flex-col items-center">
             <div className="w-10 h-10 flex justify-center items-center border-2 border-[#B82600] rounded-full">
               <FiMenu className="text-xl" />
             </div>
-            <h3 className="text-sm font-semibold">Team B</h3>
+            <h3 className="text-sm font-semibold">Team F</h3>
           </div>
         </div>
         <div className="flex items-center space-x-1">
@@ -26,12 +27,7 @@ const LiveMatch = () => {
           <p className="text-xs">Oyemekun Grammar School Akure</p>
         </div>
         <div className="flex items-center space-x-1">
-          <div
-            className="bg-green-600 rounded-full w-3 h-3 animate-blink"
-            style={{
-              animation: "blink 2s infinite",
-            }}
-          ></div>
+          <RiCalendarScheduleLine />
           <p className="text-xs">Live</p>
         </div>
       </div>
@@ -39,4 +35,4 @@ const LiveMatch = () => {
   );
 };
 
-export default LiveMatch;
+export default Fixture;

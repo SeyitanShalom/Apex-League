@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Baloo_2 } from "next/font/google";
 // import { Baloo_2 } from "@next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/Navbar";
+import Footer from "@/Components/Footer";
 
 const baloo2 = Baloo_2({
   // weight: "400", // or your desired weight
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       <body className={`${baloo2.className} antialiased`}>
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
