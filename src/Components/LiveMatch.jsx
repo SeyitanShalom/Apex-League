@@ -1,6 +1,6 @@
 import React from "react";
 import { FiMenu } from "react-icons/fi";
-import { MdLocationPin } from "react-icons/md";
+import { ImLocation2 } from "react-icons/im";
 
 const LiveMatch = () => {
   return (
@@ -21,8 +21,8 @@ const LiveMatch = () => {
             <h3 className="text-sm font-semibold">Team B</h3>
           </div>
         </div>
-        <div className="flex items-center space-x-1">
-          <MdLocationPin className="text-xl" />
+        <div className="flex items-center space-x-1 -translate-x-[2px]">
+          <ImLocation2 className="text-xl" />
           <p className="text-xs">Oyemekun Grammar School Akure</p>
         </div>
         <div className="flex items-center space-x-1">

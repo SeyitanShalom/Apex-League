@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { MdLocationPin } from "react-icons/md";
+import { ImLocation2 } from "react-icons/im";
 import { FaPhone } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa6";
@@ -16,10 +16,10 @@ const Footer = () => {
         <Image src="/Apex Logo.png" alt="Logo" width={70} height={50} />
       </div>
       <div className="flex items-center gap-1">
-        <MdLocationPin className="text-lg text-[#B82600]" />
+        <ImLocation2 className="text-lg text-[#B82600]" />
         <p className="max-w-[250px]">
           Off, no 20, Abundant Grace Of God Trade Centre, Off Akure High School
-          Road, Akure, Ondo State
+          Road, Akure, Ondo State.
         </p>
       </div>
       <div className="flex items-center gap-1">

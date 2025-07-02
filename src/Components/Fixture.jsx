@@ -2,6 +2,7 @@ import React from "react";
 import { FiMenu } from "react-icons/fi";
 import { MdLocationPin } from "react-icons/md";
 import { RiCalendarScheduleLine } from "react-icons/ri";
+import { ImLocation2 } from "react-icons/im";
 
 const Fixture = () => {
   return (
@@ -23,7 +24,7 @@ const Fixture = () => {
           </div>
         </div>
         <div className="flex items-center space-x-1">
-          <MdLocationPin className="text-xl" />
+          <ImLocation2 className="flex items-center space-x-1 text-xl -translate-x-[2px]" />
           <p className="text-xs">Oyemekun Grammar School Akure</p>
         </div>
         <div className="flex items-center space-x-1">
