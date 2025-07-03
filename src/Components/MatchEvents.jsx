@@ -68,10 +68,8 @@ const getIcon = (type) => {
 
 const MatchEvents = () => {
   return (
-    <div className="text-md font-medium text-gray-800 p-4">
-      <h2 className="text-xl border-b-2 border-gray-300 font-bold text-gray-800 mb-4">
-        Match Events
-      </h2>
+    <div className="text-md font-medium text-gray-800 p-5">
+
       <div className="flex flex-col gap-4">
         {events.map((event, idx) => (
           <div key={idx} className="flex items-center justify-between">

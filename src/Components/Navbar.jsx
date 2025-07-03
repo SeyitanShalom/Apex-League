@@ -48,7 +48,7 @@ const Navbar = () => {
             <Link onClick={() => setOpen(false)} href="/" className="">
               Standings
             </Link>
-            <Link onClick={() => setOpen(false)} href="/" className="">
+            <Link onClick={() => setOpen(false)} href="/teams" className="">
               Teams
             </Link>
           </motion.div>
