@@ -9,7 +9,7 @@ import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col gap-3 items-center text-xs mb-10 ">
+    <div className="flex flex-col gap-3 items-center text-xs mb-10 mt-20 ">
       <div className="flex items-center justify-between gap-1">
         <Image src="/JV Logo.webp" alt="Logo" width={50} height={50} />
         <p className="text-xl -translate-y-0.5">|</p>

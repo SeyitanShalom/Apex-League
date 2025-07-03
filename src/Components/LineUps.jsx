@@ -6,24 +6,24 @@ const LineUps = () => {
   const getBgColor = (position) => {
     switch (position) {
       case "Goalkeeper":
-        return "bg-green-700";
+        return "bg-green-300";
       case "Defender":
-        return "bg-blue-700";
+        return "bg-blue-300";
       case "Midfielder":
-        return "bg-yellow-600";
+        return "bg-yellow-300";
       case "Forward":
-        return "bg-red-700";
+        return "bg-red-300";
       default:
         return "bg-gray-400";
     }
   };
 
   return (
-    <div className="flex justify-between gap-10 text-sm">
+    <div className="flex justify-between gap-10 text-sm font-medium text-gray-800 ">
       {lineUps.map((lineUp) => (
         <div
           key={lineUp.id}
-          className={`w-1/2 p-4 space-y-4 ${
+          className={`w-1/2 p-5 space-y-4 ${
             lineUp.id === 1 ? "text-left" : "text-right"
           } `}
         >
@@ -36,12 +36,12 @@ const LineUps = () => {
               {" "}
               Starting XI
             </p>
-            {lineUp.players.slice(0,11).map((player) => (
+            {lineUp.players.slice(0, 11).map((player) => (
               <li key={player.number} className="">
                 {lineUp.id === 1 ? (
-                  <span className="flex items-center gap-1 justify-start mb-2">
+                  <span className="flex items-center gap-2 justify-start mb-2">
                     <p
-                      className={`w-5 h-5 flex items-center justify-center text-xs text-white rounded-full ${getBgColor(
+                      className={`w-5 h-5 flex items-center justify-center text-xs text-gray-800 rounded-full ${getBgColor(
                         player.position
                       )}`}
                     >
@@ -50,10 +50,10 @@ const LineUps = () => {
                     {player.name}
                   </span>
                 ) : (
-                  <span className="flex items-center gap-1 justify-end mb-2">
+                  <span className="flex items-center gap-2 justify-end mb-2">
                     {player.name}
                     <p
-                      className={`w-5 h-5 flex items-center justify-center text-xs text-white rounded-full ${getBgColor(
+                      className={`w-5 h-5 flex items-center justify-center text-xs text-gray-800 rounded-full ${getBgColor(
                         player.position
                       )}`}
                     >
@@ -65,15 +65,13 @@ const LineUps = () => {
             ))}
           </ul>
           <ul>
-            <p className="text-sm font-semibold text-gray-400 mb-2">
-              Subs
-            </p>
-            {lineUp.players.slice(11,17).map((player) => (
+            <p className="text-sm font-semibold text-gray-400 mb-2">Subs</p>
+            {lineUp.players.slice(11, 17).map((player) => (
               <li key={player.number} className="">
                 {lineUp.id === 1 ? (
-                  <span className="flex items-center gap-1 justify-start mb-2">
+                  <span className="flex items-center gap-2 justify-start mb-2">
                     <p
-                      className={`w-5 h-5 flex items-center justify-center text-xs text-white rounded-full ${getBgColor(
+                      className={`w-5 h-5 flex items-center justify-center text-xs text-gray-800 rounded-full ${getBgColor(
                         player.position
                       )}`}
                     >
@@ -82,10 +80,10 @@ const LineUps = () => {
                     {player.name}
                   </span>
                 ) : (
-                  <span className="flex items-center gap-1 justify-end mb-2">
+                  <span className="flex items-center gap-2 justify-end mb-2">
                     {player.name}
                     <p
-                      className={`w-5 h-5 flex items-center justify-center text-xs text-white rounded-full ${getBgColor(
+                      className={`w-5 h-5 flex items-center justify-center text-xs text-gray-800 rounded-full ${getBgColor(
                         player.position
                       )}`}
                     >
