@@ -1,0 +1,36 @@
+export const fixtures = [
+  {
+    id: 1,
+    date: "2025-07-04",
+    home: "Team A",
+    away: "Team B",
+    time: "15:00",
+    status: "upcoming",
+  },
+  {
+    id: 2,
+    date: "2025-07-04",
+    home: "Team C",
+    away: "Team D",
+    time: "17:00",
+    status: "live",
+    score: "2 - 1",
+  },
+  {
+    id: 3,
+    date: "2025-07-05",
+    home: "Team E",
+    away: "Team F",
+    time: "14:00",
+    status: "completed",
+    score: "0 - 0",
+  },
+  {
+    id: 4,
+    date: "2025-07-05",
+    home: "Team G",
+    away: "Team H",
+    time: "18:00",
+    status: "upcoming",
+  },
+];

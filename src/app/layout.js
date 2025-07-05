@@ -28,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${baloo2.className} antialiased`}>
+      <body className={`${baloo2.className} antialiased max-w-2xl mx-auto `}>
         <Navbar />
         {children}
         <Footer/>

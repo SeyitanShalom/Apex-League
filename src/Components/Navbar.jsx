@@ -12,7 +12,7 @@ const Navbar = () => {
     setOpen(!open);
   };
   return (
-    <div className="flex justify-between items-center px-5 py-2">
+    <div className="flex justify-between items-center px-5 py-2 relative">
       <div className="flex items-center justify-between gap-1">
         <Image src="/JV Logo.webp" alt="Logo" width={50} height={50} />
         <p className="text-xl -translate-y-0.5">|</p>
@@ -39,13 +39,13 @@ const Navbar = () => {
             <Link onClick={() => setOpen(false)} href="/" className="">
               Home
             </Link>
-            <Link onClick={() => setOpen(false)} href="/" className="">
+            <Link onClick={() => setOpen(false)} href="/fixtures" className="">
               Fixtures
             </Link>
             <Link onClick={() => setOpen(false)} href="/" className="">
               Results
             </Link>
-            <Link onClick={() => setOpen(false)} href="/" className="">
+            <Link onClick={() => setOpen(false)} href="/standings" className="">
               Standings
             </Link>
             <Link onClick={() => setOpen(false)} href="/teams" className="">
