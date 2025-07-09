@@ -11,7 +11,7 @@ import { matches } from "@/data/matches";
 
 const Page = () => {
   const { slug } = useParams();
-  const fixture = matches.find((f) => f.id === slug);
+  const fixture = matches.find((f) => String(f.id) === slug);
   const [details, setDetails] = useState("matchEvents");
 
   if (!fixture) return <div>Fixture not found</div>;
@@ -39,15 +39,25 @@ const Page = () => {
             {fixture.date} | {fixture.time}
           </p>
           <h2 className="text-3xl font-semibold">{fixture.score}</h2>
-          <div className="flex items-center space-x-1">
-            <div
-              className="bg-green-600 rounded-full w-3 h-3 animate-blink"
-              style={{
-                animation: "blink 2s infinite",
-              }}
-            ></div>
-            <p className="text-xs">Live</p>
-          </div>
+          {fixture.status === "live" ? (
+            <div className="flex items-center space-x-1">
+              <div
+                className="bg-green-600 rounded-full w-3 h-3 animate-blink"
+                style={{
+                  animation: "blink 2s infinite",
+                }}
+              ></div>
+              <p className="text-xs">Live</p>
+            </div>
+          ) : fixture.status === "completed" ? (
+            <div className="flex items-center space-x-1">
+              <p className="text-xs">Finished</p>
+            </div>
+          ) : (
+            <div className="flex items-center space-x-1">
+              <p className="text-xl font-semibold">VS</p>
+            </div>
+          )}
         </div>
         <div className="flex flex-col items-center">
           <div className="w-14 h-14 flex justify-center items-center rounded-full">

@@ -34,13 +34,13 @@ const Navbar = () => {
             exit={{ scaleY: 0, opacity: 0 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
             // style={{ originY: 0, overflow: "hidden", background: "#B82600" }}
-            className="absolute right-6 top-15 w-36 rounded-lg p-3 text-sm bg-[#B82600] origin-top text-white font-bold flex flex-col gap-5"
+            className="absolute right-6 top-15 w-36 rounded-lg p-3 text-sm bg-[#B82600] origin-top text-white font-bold flex flex-col gap-5 z-10 "
           >
             <Link onClick={() => setOpen(false)} href="/" className="">
               Home
             </Link>
-            <Link onClick={() => setOpen(false)} href="/fixtures" className="">
-              Fixtures
+            <Link onClick={() => setOpen(false)} href="/matches" className="">
+              Matches
             </Link>
             <Link onClick={() => setOpen(false)} href="/" className="">
               Results

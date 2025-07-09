@@ -7,9 +7,9 @@ const TeamPlayers = () => {
   return (
     <div className="flex flex-col items-center gap-y-10">
       <div className="flex items-center gap-2 font-semibold">
-        <div className="w-10 h-10 rounded-full bg-gray-400 flex items-center justify-center">
+        <div className="w-10 h-10 rounded-full flex items-center justify-center">
           <Image
-            src="/profile.webp"
+            src="/football club.png"
             alt="Team Logo"
             width={50}
             height={50}

@@ -1,53 +1,7 @@
 import React from "react";
 import { FaFutbol, FaArrowRight, FaExchangeAlt } from "react-icons/fa";
 import { IoMdCard } from "react-icons/io";
-
-const events = [
-  {
-    minute: 16,
-    type: "goal",
-    player: "Player A",
-    team: "Team A",
-    description: "Goal",
-  },
-  {
-    minute: 22,
-    type: "yellow",
-    player: "Player B",
-    team: "Team B",
-    description: "Yellow Card",
-  },
-  {
-    minute: 45,
-    type: "sub",
-    player: "Player C",
-    subIn: "Player D",
-    team: "Team A",
-    description: "Substitution",
-  },
-  {
-    minute: 60,
-    type: "goal",
-    player: "Player F",
-    team: "Team B",
-    description: "Goal",
-  },
-  {
-    minute: 70,
-    type: "red",
-    player: "Player E",
-    team: "Team A",
-    description: "Red Card",
-  },
-  {
-    minute: 80,
-    type: "sub",
-    player: "Player B",
-    subIn: "Player G",
-    team: "Team B",
-    description: "Substitution",
-  },
-];
+import { events } from "@/data/events";
 
 const getIcon = (type) => {
   switch (type) {
@@ -69,7 +23,6 @@ const getIcon = (type) => {
 const MatchEvents = () => {
   return (
     <div className="text-md font-medium text-gray-800 p-5">
-
       <div className="flex flex-col gap-4">
         {events.map((event, idx) => (
           <div key={idx} className="flex items-center justify-between">
@@ -83,7 +36,7 @@ const MatchEvents = () => {
                 <div className="flex items-center gap-2">
                   {event.type === "sub" ? (
                     <div className="flex flex-col -space-y-1.5">
-                      <span className="line-through text-xs">
+                      <span className="text-gray-500 text-xs">
                         {event.player}
                       </span>
                       <span className="text-gray-800">{event.subIn}</span>
@@ -110,7 +63,7 @@ const MatchEvents = () => {
                   {getIcon(event.type)}
                   {event.type === "sub" ? (
                     <div className="flex flex-col -space-y-1.5">
-                      <span className="line-through text-xs">
+                      <span className="text-gray-500 text-xs">
                         {event.player}
                       </span>
                       <span className="text-gray-800">{event.subIn}</span>

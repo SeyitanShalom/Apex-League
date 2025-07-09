@@ -1,4 +1,4 @@
-export const fixtures = [
+export const matches = [
   {
     id: 1,
     date: "2025-07-04",
@@ -6,6 +6,7 @@ export const fixtures = [
     away: "Team B",
     time: "15:00",
     status: "upcoming",
+    image: "/football club.png",
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ export const fixtures = [
     time: "17:00",
     status: "live",
     score: "2 - 1",
+    image: "/football club.png",
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ export const fixtures = [
     time: "14:00",
     status: "completed",
     score: "0 - 0",
+    image: "/football club.png",
   },
   {
     id: 4,
@@ -32,5 +35,26 @@ export const fixtures = [
     away: "Team H",
     time: "18:00",
     status: "upcoming",
+    image: "/football club.png",
+  },
+  {
+    id: 5,
+    date: "2025-07-04",
+    home: "Team I",
+    away: "Team J",
+    time: "17:00",
+    status: "live",
+    score: "2 - 4",
+    image: "/football club.png",
+  },
+  {
+    id: 6,
+    date: "2025-07-05",
+    home: "Team K",
+    away: "Team L",
+    time: "14:00",
+    status: "completed",
+    score: "0 - 3",
+    image: "/football club.png",
   },
 ];

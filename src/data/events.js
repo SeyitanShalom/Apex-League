@@ -1,0 +1,46 @@
+export const events = [
+  {
+    minute: 16,
+    type: "goal",
+    player: "Player A",
+    team: "Team A",
+    description: "Goal",
+  },
+  {
+    minute: 22,
+    type: "yellow",
+    player: "Player B",
+    team: "Team B",
+    description: "Yellow Card",
+  },
+  {
+    minute: 45,
+    type: "sub",
+    player: "Player C",
+    subIn: "Player D",
+    team: "Team A",
+    description: "Substitution",
+  },
+  {
+    minute: 60,
+    type: "goal",
+    player: "Player F",
+    team: "Team B",
+    description: "Goal",
+  },
+  {
+    minute: 70,
+    type: "red",
+    player: "Player E",
+    team: "Team A",
+    description: "Red Card",
+  },
+  {
+    minute: 80,
+    type: "sub",
+    player: "Player B",
+    subIn: "Player G",
+    team: "Team B",
+    description: "Substitution",
+  },
+];
