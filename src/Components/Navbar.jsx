@@ -42,9 +42,9 @@ const Navbar = () => {
             <Link onClick={() => setOpen(false)} href="/matches" className="">
               Matches
             </Link>
-            <Link onClick={() => setOpen(false)} href="/" className="">
+            {/* <Link onClick={() => setOpen(false)} href="/" className="">
               Results
-            </Link>
+            </Link> */}
             <Link onClick={() => setOpen(false)} href="/standings" className="">
               Standings
             </Link>
