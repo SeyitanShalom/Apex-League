@@ -1,4 +1,4 @@
-let lineUps = [
+export const lineUps = [
   {
     id: 1,
     team: "Team A",
@@ -47,5 +47,3 @@ let lineUps = [
       { name: "Savinho", position: "Forward", number: 17 },],
   },
 ];
-
-export default lineUps;
